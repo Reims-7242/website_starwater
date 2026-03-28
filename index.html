@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>starwater</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/EuropeExt.css">
+    <link rel="stylesheet" href="assets/css/Montserrat.css">
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="text-center" style="background: #ff6e01;">
+    <nav class="navbar navbar-expand-md fixed-top bg-body" style="background: linear-gradient(#ff6e01, #ff6e01), #ff6e01;">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="background: #b52701;border-radius: 36px;border-width: 0px;padding-top: 28px;margin: -12px;margin-top: -65px;height: 112px;">
+                <ul class="navbar-nav mt-4 pt-0 mb-2" style="height: 40px;">
+                    <li class="nav-item"><a class="nav-link active me-8" href="#" style="color: var(--bs-light);font-family: Montserrat, sans-serif;font-size: 20px;">О бренде</a></li>
+                    <li class="nav-item" style="font-size: 20px;"><a class="nav-link" href="#" style="color: var(--bs-light);font-family: Montserrat, sans-serif;font-size: 20px;">ассортимент</a></li>
+                    <li class="nav-item" style="font-size: 20px;"><a class="nav-link ms-8" href="#" style="color: var(--bs-light);font-family: Montserrat, sans-serif;font-size: 20px;">купить</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container"><img class="mt-5" src="assets/img/Can.png" width="1095" height="627"></div>
+    <div class="container mt-6 mb-6" style="background: #b52701;border-radius: 28px;">
+        <figure class="figure"></figure>
+        <div class="row">
+            <div class="col col-xxl-6">
+                <h1 style="font-family: EuropeExt;color: #ffffff;font-size: 75px;"><br>О бренде<br><br></h1>
+                <p style="text-align: left;font-family: Montserrat, sans-serif;color: var(--bs-light);font-size: 28px;transform: translate(99px);margin-top: -50px;"><br>Если ты любишь движение, <br>новые впечатления и не боишься <br>пробовать необычное <br>— CIELO MIST создан для тебя<br><br></p>
+            </div>
+            <div class="col col-xxl-3"><img src="assets/img/WOMAN.png" width="613" height="636" style="transform: translate(-14px);"></div>
+        </div>
+    </div>
+    <div class="container" style="background: #b52701;border-radius: 28px;">
+        <div class="row">
+            <div class="col">
+                <h1 class="mb-0 pb-0" style="color: rgb(255,255,255);text-align: left;font-family: EuropeExt;font-size: 74px;transform: translate(99px);"><br>Ассортимент<br><br></h1>
+                <h1 style="text-align: left;color: rgb(255,255,255);font-size: 34px;font-family: Montserrat, sans-serif;font-weight: bold;transform: translate(99px);margin-top: -66px;">Черешня</h1>
+                <p style="color: rgb(255,255,255);font-size: 24px;font-family: Montserrat, sans-serif;text-align: left;transform: translate(99px);margin-top: 31px;"><br>Освежающий вишнёвый аромат <br>сочетается с лёгкой шипучестью, создавая идеальное сочетание сладости и лёгкой кислинки.<br><br></p><button class="btn btn-primary mt-5 mb-6" type="button" style="transform: translate(-81px);transform-origin: center;filter: blur(0px);backdrop-filter: opacity(0.49);-webkit-backdrop-filter: opacity(0.49);width: 254px;min-width: 38px;height: 60px;font-family: Montserrat, sans-serif;background: rgb(255,255,255);color: rgb(166,52,25);font-size: 23px;">Купить</button>
+            </div>
+            <div class="col"><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео из изображений</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .video-frame {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;  /* ← центрирование по горизонтали */
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        
+        .frame-container {
+            position: relative;
+            width: 100%;
+            padding-top: 105%; /* 16:9 Aspect Ratio */
+            background: #00000000;
+            background-image: url('assets/img/OPO_1.png');
+            background-repeat: no-repeat;
+            background-position: 40% center;
+            background-size: 90%;
+        }
+        
+        .frame-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: slideshow 7.5s infinite;
+        }
+        
+        /* Плавное появление и исчезновение */
+        @keyframes slideshow {
+            0% { opacity: 0; }
+            3% { opacity: 1; }
+            7% { opacity: 1; }
+            10% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        
+        /* Задержки для 25 кадров (каждый кадр виден ~0.3 сек) */
+        .frame-img:nth-child(1) { animation-delay: 0s; }
+        .frame-img:nth-child(2) { animation-delay: 0.3s; }
+        .frame-img:nth-child(3) { animation-delay: 0.6s; }
+        .frame-img:nth-child(4) { animation-delay: 0.9s; }
+        .frame-img:nth-child(5) { animation-delay: 1.2s; }
+        .frame-img:nth-child(6) { animation-delay: 1.5s; }
+        .frame-img:nth-child(7) { animation-delay: 1.8s; }
+        .frame-img:nth-child(8) { animation-delay: 2.1s; }
+        .frame-img:nth-child(9) { animation-delay: 2.4s; }
+        .frame-img:nth-child(10) { animation-delay: 2.7s; }
+        .frame-img:nth-child(11) { animation-delay: 3.0s; }
+        .frame-img:nth-child(12) { animation-delay: 3.3s; }
+        .frame-img:nth-child(13) { animation-delay: 3.6s; }
+        .frame-img:nth-child(14) { animation-delay: 3.9s; }
+        .frame-img:nth-child(15) { animation-delay: 4.2s; }
+        .frame-img:nth-child(16) { animation-delay: 4.5s; }
+        .frame-img:nth-child(17) { animation-delay: 4.8s; }
+        .frame-img:nth-child(18) { animation-delay: 5.1s; }
+        .frame-img:nth-child(19) { animation-delay: 5.4s; }
+        .frame-img:nth-child(20) { animation-delay: 5.7s; }
+        .frame-img:nth-child(21) { animation-delay: 6.0s; }
+        .frame-img:nth-child(22) { animation-delay: 6.3s; }
+        .frame-img:nth-child(23) { animation-delay: 6.6s; }
+        .frame-img:nth-child(24) { animation-delay: 6.9s; }
+        .frame-img:nth-child(25) { animation-delay: 7.2s; }
+        
+        .frame-counter {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        /* Центрирование всей колонки */
+        .centered-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <!-- Центрированная колонка -->
+        <div class="row">
+            <div class="col-12 centered-column">
+                <div class="video-frame">
+                    <div class="frame-container" id="frameContainer">
+                        <img class="frame-img" src="assets/Video/0001.png" alt="Frame 1">
+                        <img class="frame-img" src="assets/Video/0002.png" alt="Frame 2">
+                        <img class="frame-img" src="assets/Video/0003.png" alt="Frame 3">
+                        <img class="frame-img" src="assets/Video/0004.png" alt="Frame 4">
+                        <img class="frame-img" src="assets/Video/0005.png" alt="Frame 5">
+                        <img class="frame-img" src="assets/Video/0006.png" alt="Frame 6">
+                        <img class="frame-img" src="assets/Video/0007.png" alt="Frame 7">
+                        <img class="frame-img" src="assets/Video/0008.png" alt="Frame 8">
+                        <img class="frame-img" src="assets/Video/0009.png" alt="Frame 9">
+                        <img class="frame-img" src="assets/Video/0010.png" alt="Frame 10">
+                        <img class="frame-img" src="assets/Video/0011.png" alt="Frame 11">
+                        <img class="frame-img" src="assets/Video/0012.png" alt="Frame 12">
+                        <img class="frame-img" src="assets/Video/0013.png" alt="Frame 13">
+                        <img class="frame-img" src="assets/Video/0014.png" alt="Frame 14">
+                        <img class="frame-img" src="assets/Video/0015.png" alt="Frame 15">
+                        <img class="frame-img" src="assets/Video/0016.png" alt="Frame 16">
+                        <img class="frame-img" src="assets/Video/0017.png" alt="Frame 17">
+                        <img class="frame-img" src="assets/Video/0018.png" alt="Frame 18">
+                        <img class="frame-img" src="assets/Video/0019.png" alt="Frame 19">
+                        <img class="frame-img" src="assets/Video/0020.png" alt="Frame 20">
+                        <img class="frame-img" src="assets/Video/0021.png" alt="Frame 21">
+                        <img class="frame-img" src="assets/Video/0022.png" alt="Frame 22">
+                        <img class="frame-img" src="assets/Video/0023.png" alt="Frame 23">
+                        <img class="frame-img" src="assets/Video/0024.png" alt="Frame 24">
+                        <img class="frame-img" src="assets/Video/0025.png" alt="Frame 25">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentFrame = 1;
+        const totalFrames = 25;
+        const frameDuration = 300; // 0.3 секунды на кадр
+        
+        const frameCounter = document.getElementById('frameCounter');
+        
+        function updateCounter() {
+            frameCounter.textContent = `Кадр ${currentFrame} из ${totalFrames}`;
+        }
+        
+        function nextFrame() {
+            currentFrame = (currentFrame % totalFrames) + 1;
+            updateCounter();
+        }
+        
+        setInterval(nextFrame, frameDuration);
+        updateCounter();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html></div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
